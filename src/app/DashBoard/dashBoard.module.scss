@@ -1,0 +1,36 @@
+.h1 {
+  width: fit-content;
+  margin: 50px auto;
+}
+
+.label {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  transition: .3s all;
+  position: relative;
+
+  &:first-child:after {
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid #444;
+    transform-origin: 50% 100%;
+    transition: .3s all;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.selectMenu {
+  width: 50%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.visible {
+  display: none;
+}

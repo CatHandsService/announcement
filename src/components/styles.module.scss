@@ -1,0 +1,89 @@
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px
+}
+
+.confirm {
+  @extend .submit;
+  width: 50%;
+  margin-inline: auto;
+}
+
+.h2 {
+  // width: 50%;
+  // margin-inline: auto;
+  text-align: center;
+}
+
+.inputTag,
+.inputTitle,
+.selectBox {
+  height: 2rem;
+  padding: 5px;
+  border: 1px solid #7c7c7c;
+  border-radius: 5px;
+}
+
+.inputTag {
+  width: 50%;
+}
+
+.inputTitle {
+  width: 100%;
+}
+
+.inputDescription {
+  width: 100%;
+  height: 5rem;
+  padding: 5px;
+  border: 1px solid #7c7c7c;
+  border-radius: 5px;
+}
+
+.loginFormContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.modify {
+  @extend .submit;
+  margin-left: 20px;
+  background-color: #a7a7a7 !important;
+
+  &:hover {
+    background-color: #bdbdbd !important;
+    color: #fff;
+  }
+}
+
+.postFormContainer {
+  width: 50%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.selectBox {
+  width: 8rem;
+  height: 2rem;
+}
+
+.submit {
+  width: 50%;
+  height: 2rem;
+  margin-inline: auto;
+  background-color: #76b6ff;
+  border: none;
+  border-radius: 5px;
+  color: #444;
+  cursor: pointer;
+  transition: .2s all;
+
+  &:hover {
+    background-color: #2949ff;
+    color: #fff;
+  }
+}

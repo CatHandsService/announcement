@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Announcement {
+  id           Int      @id @default(autoincrement())
+  creator      String
+  createdDate  DateTime @default(now())
+  lastUpdated  DateTime @updatedAt
+  tag          String?
+  title        String
+  content      String
+  publication  String
+}
